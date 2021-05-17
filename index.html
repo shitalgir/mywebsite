@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Shital, Shital bio">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="Discription" content="This  is the personal bio of imss Shital.">
+    <title>Shital</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.google.com/uc?id=1evWgI179h9S-z9GP1zXcjrLCkatN-4Fy">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Reggae+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            /* font-size: 18px; */
+            color: rgb(255, 251, 251);
+            font-family: 'Reggae One', cursive;
+        }
+
+
+        /* for hole body  */
+        body::before {
+            content: "";
+            background: linear-gradient(30deg, rgb(0, 0, 0), rgb(107, 106, 177) 40%, blue, black);
+            height: 660px;
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+            opacity: .6;
+        }
+
+        /* for navigation  */
+        #navigation {
+            Display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+
+        }
+
+        #navigation::before {
+            content: "";
+            background: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: .9;
+
+        }
+
+        .logo a {
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            text-shadow: 2px 2px rgb(70 178 228);
+        }
+
+        .logo a:hover {
+            color: rgb(157, 174, 177);
+            text-shadow: 2px 2px 3px #010127, 2px 2px 5px #3cff00;
+            transition: 1s;
+            text-decoration: underline;
+        }
+
+        .nav_button {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav_button ul {
+            margin: 10px 3px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav_button li {
+            list-style: none;
+        }
+
+        .nav_button a {
+            font-family: 'Dancing Script', cursive;
+            color: black;
+            font-size: 21px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid #403b3b;
+            border-radius: 10px;
+            text-shadow: 2px 2px rgb(150, 150, 163);
+            font-weight: 700;
+            background: none;
+        }
+
+        .nav_button a:hover {
+            background: black;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px blue;
+            border: none;
+            text-decoration: underline;
+            transition: 1s;
+        }
+
+
+        /* for home */
+        #home {
+            display: flex;
+            position: relative;
+        }
+
+        #home::before {
+            content: "";
+            background: url('https://drive.google.com/uc?id=1nEW-DCbkh8gW0secNsMH0jLJv851822N');
+            filter: brightness(120%);
+            background-blend-mode: lighten;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 0px;
+            right: 0px;
+            opacity: 2;
+            /* background-position-x: -770px; */
+        }
+
+        .full_data {
+            z-index: 0;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin: 20% 45%;
+            width: 45%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box2 h1 {
+            padding-top: 30px;
+            font-size: 30px;
+            align-items: center;
+            text-align: center;
+            color: black;
+            font-weight: 900;
+            text-decoration: underline;
+            z-index: -1;
+        }
+
+        .box2 p {
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+            padding-top: 22px;
+            color: black;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .box2 button {
+            border-radius: 5px;
+            background: none;
+            width: 100px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .box2 a {
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .box2 a:hover {
+            text-decoration: underline;
+            color: aqua;
+            transition: 1s;
+        }
+
+        /* for experiecne section  */
+        .container {
+            margin-top: 660px;
+
+        }
+
+        #experience {
+            overflow: auto;
+        }
+
+        #experience::before {
+            content: "";
+            background: url('https://drive.google.com/uc?id=1KzHqqfAuhEkYhFXUo4KBxX0KkV5nNrZ0');
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #experience center {
+            font-size: 30px;
+            color: blue;
+            text-shadow: 2px 2px black;
+            font-weight: 900;
+            text-decoration: underline;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box4:hover {
+            transition: 1s;
+            background: aqua;
+            margin-top: 1px;
+        }
+
+        .box4 {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(85, 87, 90);
+            margin: 20px;
+            height: 400px;
+            padding: 10px;
+            text-align: center;
+            background: none;
+            border-radius: 15px;
+            align-items: center;
+            box-shadow: 3px 3px 3px 3px black;
+        }
+
+        .box4 h1 {
+            font-size: 25px;
+            color: black;
+            text-shadow: 3px 0px blue;
+            text-decoration: underline;
+        }
+
+        .box4 li {
+            font-size: 22px;
+            text-decoration: underline;
+            color: black;
+            list-style: none;
+            text-shadow: 2px 2px rgb(81, 158, 18);
+        }
+
+        .box4 p {
+            font-size: 20px;
+            color: black;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #experience img {
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        #photos {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .boxes {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            background-image: url('https://drive.google.com/uc?id=1L49gvHZBFovcxyjRfNHmlHfz6VhyE-M_');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .width {
+            width: 300px;
+            margin: 3000px;
+
+        }
+
+
+
+        /* for animation */
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animation 20s linear infinite;
+        }
+
+        @keyframes animation {
+            0% {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+        }
+
+        .box span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+            -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+        }
+
+        span img {
+            width: 320px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 2px 2px #47563e;
+        }
+
+        .box span img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background: black;
+            text-align: center;
+            text-shadow: 2px 2px blue;
+        }
+
+
+
+        /* to make responsive */
+
+        @media only screen and (max-width: 1000px) {
+            body {
+                background: black;
+            }
+
+            #home::before {
+                background-position-x: -338px;
+                height: 120vh;
+
+            }
+
+            .box2 {
+                margin: 46% 10%;
+                width: 76%;
+            }
+
+            .flex {
+                flex-direction: column;
+            }
+
+            .box4 {
+                width: 80%;
+            }
+
+            #experience::before {
+                height: 175%;
+            }
+
+            .box {
+
+                width: 165px;
+                height: 165px;
+            }
+
+            .logo {
+                width: 25%;
+            }
+
+            .nav_button {
+                width: 80%;
+            }
+
+            .box span {
+                margin: 0px -30px;
+                padding: 0px -20px;
+                overflow: hidden;
+            }
+
+            .box span {
+                transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+
+            }
+
+        }
+
+        @media only screen and (max-width: 520px) {
+            body {
+                background: rgb(0, 0, 0);
+            }
+
+            .logo a {
+                font-size: 15px;
+
+            }
+
+            .nav_button a {
+                border: none;
+                font-size: 13px;
+                margin-left: -10px;
+            }
+
+            .box2 h1 {
+                font-size: 18px;
+            }
+
+            .box2 p {
+                font-size: 16px;
+            }
+
+            .box2 a {
+                font-size: 13px;
+
+            }
+
+            #home::before {
+                background-position-x: -606px;
+                height: 120vh;
+            }
+
+            .box2 button {
+                border-radius: 3px;
+                width: 65px;
+            }
+
+            .box2 {
+                margin: 83% 8%;
+                width: 82%;
+            }
+
+            .box span {
+                transform: rotateY(calc(var(--i) * 45deg)) translateZ(120px);
+
+            }
+
+            .box {
+
+                width: 100px;
+                height: 100px;
+            }
+
+            .boxes {
+                min-height: 80vh;
+            }
+
+            .box4 h1 {
+                font-size: 18px;
+            }
+
+            .box4 li {
+                font-size: 17px;
+            }
+
+            .box4 p {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navigation">
+
+        <div class="logo">
+            <a href="https://www.facebook.com/seetal.gri/" target="_blank">
+
+                Shital
+            </a>
+        </div>
+        <div class="nav_button">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="https://www.instagram.com/c_talgiri26/" target="_blank">Follow</a></li>
+
+                <!-- <div class="serch_butt">
+                    <input type="text">
+                    <button>
+                        Search
+                    </button>
+                </div> -->
+            </ul>
+
+        </div>
+    </nav>
+    <container id="home">
+
+        <div class="box2">
+            <div class="full_data">
+                <h1>Interduction</h1>
+                <p>A man without dream can have no success in life.With this small quote,I'm introducing myself.My name is Seetal Giri,a student of computer application at Greenfield national college.I am optimistic, trustworthy,hard working and responsible person. I can't  deny someone who asks for help, straight forward as I don't like backbiting,easy believing in anyone.    </p>
+                <button class="Ist"> <a href="https://www.facebook.com/seetal.gri/photos_all" target="_blank"> Facebook
+                    </a>
+                </button>
+                <button> <a href="https://www.gmail.com
+                    " target="_blank"> Gmail </a></button>
+            </div>
+        </div>
+    </container>
+
+
+
+    <div class="container">
+        <container id="experience">
+            <h1>
+                <center>Curriculum Vitae</center>
+            </h1>
+            <br>
+            <div class="flex">
+
+                <div class="box4" id="Ibox">
+                    <!-- <img src="img1.jpg" alt=""> -->
+
+                    <h1>Graduation</h1>
+                    <br>
+                    <ul>
+                        <li>SEE</li>
+                        <p>I had passed SEE from ABC secondary school. I got A+(3.65 GPA) with mejor subject Computer
+                            and Optional maths.</p>
+                        <br><br>
+                        <li>Undergraduation</li>
+                        <p>I had completed +2 from XYZ hightr secondary school. I got A(3.19 GPA) from science faculty
+                            with mejor subject Biology.</p>
+                        <br><br>
+                        <li>Diploma in ms office</li>
+                        <p>I had cleared Deploma in microsoft office. I know every thing about Excell, Word, powerpoint
+                            etc.
+                        </p>
+                    </ul>
+
+
+                </div>
+                <div class="box4" id="IIbox">
+                    <h1> Skills</h1>
+                    <br>
+                    <ul>
+                        <li>Web Developing</li>
+                        <p>I had done with the responsiability Junior developer from 2 year in ABC teck office. I can
+                            make responsive website and i am specialist in frontend developer</p>
+                        <br><br>
+                        <li>Advance MS-Office</li>
+                        <p>I have 3 year's experience in the field of Excell, Word, and Powerpoint. I can do every thing
+                            in this Field.</p>
+                        <br><br>
+                        <li>Junior Accountent</li>
+                        <p>I have 6 month's experience in Junior Accountent, I can analize basic-advance organization
+                            numeric data.</p>
+                        <!-- <li>Advance MS Power point</li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </container>
+    </div>
+
+    <container id="photos">
+        <div class="boxes">
+            <div class="box"> <a href="https://www.facebook.com/seetal.gri/photos_all" target="_blank">
+                <h1>My self Shital</h1>
+                <br>
+                <br><br>
+                    <div class="width">
+
+
+                        <span style="--i:1"> <img src="https://drive.google.com/uc?id=1lLRQ10h2gPBb17s5HRXv9-Pw3MHE32zW" alt=""></span>
+                        <span style="--i:2"> <img src="https://drive.google.com/uc?id=1eYRXpAL1ae_Hf_iQiG8_W6ag0RBKiHOH" alt=""></span>
+                        <span style="--i:3"> <img src="https://drive.google.com/uc?id=1CIk-3xLBqNye4pUvSOgap9qQdIoVjNMW" alt=""></span>
+                        <span style="--i:4"> <img src="https://drive.google.com/uc?id=19vGAkXtBQPzw9fS2lkvA5sSQfzyubPNj" alt=""></span>
+                        <span style="--i:5"> <img src="https://drive.google.com/uc?id=1FpqAjqmQpFDMvRHjq65cM6XpsAzlgabO" alt=""></span>
+                        <span style="--i:6"> <img src="https://drive.google.com/uc?id=1_xfvLzo9h0dp5QRMT33L5SljBFOFrXMQ" alt=""></span>
+                        <span style="--i:7"> <img src="https://drive.google.com/uc?id=15eK5csZgIz_NuY3u72rlGwaLsGO-DyL5" alt=""></span>
+                        <span style="--i:8"> <img src="https://drive.google.com/uc?id=17AcWLRakZ9JxrkyGinKetWlqDMcVI64I" alt=""></span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </container>
+
+
+
+
+    <footer>
+        Copyright &copy; 2021 www.giriseetal@gmail.com .All rights reserved!
+        Created by Shital, Helped by King....
+    </footer>
+
+</body>
+
+</html>
